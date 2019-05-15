@@ -1,0 +1,16 @@
+fieldset {
+            margin: auto;
+            margin-top: 100px;
+            width: 50%;
+        }
+ 
+        table tr th {
+            padding-top: 20px;
+        }
+		body{
+		background-color: #f9f9d6;
+		}
+		table{
+			border-spacing: 0px;
+			border-collapse: separate;
+		}

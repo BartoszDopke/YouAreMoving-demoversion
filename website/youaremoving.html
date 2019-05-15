@@ -1,0 +1,73 @@
+<?php
+
+	session_start();
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
+
+<!doctype html>
+<html lang="en-US">
+	<head>	
+	<title>YouAreMoving</title>
+		<meta charset="UTF-8">
+		<meta name="Description" content="This site is made for you to help create the best version of you!"/>
+		<meta name="Keywords" content="you,are,moving,training,nutrition,exercises,calisthenics,weightlifting,bodybuilding"/>		
+		<link rel="stylesheet" href="yam.css">
+	</head>
+	<body>
+	<div id="strona">
+	<div class="btn-up">
+	<a href="signup.php">
+		<button>Sign Up</button>
+		</a>
+		<a href="index.php">
+		<button>Sign In</button>
+		</a>
+		<form method="post">
+    <input type="submit" name="test" id="test" value="RUN" /><br/>
+</form>
+
+<?php
+
+function testfun()
+{
+   echo "Your test function on button click is working";
+}
+
+if(array_key_exists('test',$_POST)){
+   testfun();
+}
+
+?>
+	</div>
+	<ul>
+	<div class="btn-group">
+		<li><a href="yam-exercises.html"><button>Exercises</button></a></li>
+		<li><a href="yam-nutrition.html"><button>Nutrition</button></a></li>
+		<li><a href="yam-articles.php"><button>Articles</button></a></li>
+		<li><a href="contact1.php"><button>Contact</button></a></li>
+	</div>	
+	</ul>
+	<div id="logo">
+	<img src="tlo.jpg" alt="tlo">
+	</div>
+	<div style="clear:both"></div>
+	
+	
+	<section id="cytaty">
+		<h3>"Hard work beats talent when talent doesn’t work hard."</h3>
+	<h2>– Tim Notke</h2>
+	</section>
+	<div style="clear:both"></div>
+	<section id="sylwetki">
+	<h2>Sylwetki sportowców</h2>
+	<h3>Ido Portal urodził się...</h3>
+	<img src="https://www.livemint.com/rf/Image-621x414/LiveMint/Period2/2017/01/07/Photos/Processed/Coach-k5nG--621x414@LiveMint.jpg" alt="Tutaj bedzie zdjecie sportowca">		
+	</section>
+	</div>
+	</body>
+</html>

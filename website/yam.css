@@ -1,0 +1,136 @@
+body{
+	background-color: #f9f9d6;
+	margin-left:40px;
+	margin-right:40px;
+	}
+#strona{
+	margin: auto;
+	padding: 0px;
+}
+#logo img{
+	position: relative;
+	border-radius: 12px;
+	height:600px;
+	display: block;
+    margin-right: auto;
+    width: auto;
+}
+	h1{
+		color: blue;
+		}
+	h2{
+		color:black;
+		text-align:right;
+		margin-bottom:20px;
+		font-size:25px;
+	}
+	h3{
+		color:black;
+		text-align:right;
+		margin-bottom:20px;
+		font-style:italic;
+		font-size:20px;
+	}
+	p{
+	color: black;
+	}
+	.btn-group button{
+    background-color: #adad85; 
+    border: 1px solid gray;
+    color: white;
+	padding: 10px 24px;
+	margin-bottom:5px;
+	margin-top:5px;
+    float: left;
+    text-decoration: none;
+    display: block;
+	clear:both;
+    font-size: 25px;
+	font-family: Trade Gothic;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+.btn-group button:hover {
+    background-color: #8a8a5c; 
+    color: white;
+}
+a:link{
+	text-decoration:none;
+}
+.btn-group a{
+	display:block;
+    text-decoration: none;
+
+}
+
+.btn-up button{
+	background-color: #adad85;
+	float:right;
+	border: 1px solid gray;
+	text-align: center;
+	margin-left:5px;
+    color: white;
+	display: inline;
+	font-size:20px;
+	font-family: Trade Gothic;
+	border-radius: 10px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.btn-up button:hover {
+    background-color: #8a8a5c; 
+    color: white;
+}
+#sylwetki{
+	
+	width:500px;
+	height:800px;
+	float:right;
+}
+#cytaty{
+	
+	width:500px;
+	height:300px;
+	float:right;	
+	font-size:20px;
+	font-family:Trade Gothic;
+	text-align:right;
+	margin-bottom:20px;
+	
+}
+#sylwetki img{
+	height:300px;
+	width:auto;
+	float:right;
+	border-radius:12px;
+	
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+	
+    
+}
+
+li {
+    float: left;
+}
+#manageMember table {
+            width: 100%;
+            margin-top: 20px;		
+			border-spacing: 0px;
+			border-collapse: collapse;
+			margin:auto;
+			
+        }
+		td { 
+		padding: 10px;
+		}	
+
+

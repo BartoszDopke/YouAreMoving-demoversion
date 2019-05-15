@@ -1,0 +1,37 @@
+body { 
+background-color: #f9f9d6; 
+}
+h1 {
+	color: black;
+	font-size: 40px;
+	font-family: Trade Gothic;
+	text-align: center;
+	margin-top:10px;
+}
+p {
+	color: black;
+	font-size:20px;
+	font-family: Trade Gothic;
+	text-align:left;
+}
+	.button 
+	{
+    background-color: #adad85; 
+	float: left;
+    border: 1px solid gray;
+    color: white;
+    padding: 30px 64px;
+	margin-left: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+	font-family: Trade Gothic;
+	border-radius: 12px;
+	-webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.button:hover {
+    background-color: #8a8a5c; 
+    color: white;
+}

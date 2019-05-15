@@ -1,0 +1,58 @@
+<?php
+
+	session_start();
+	
+	if (!isset($_SESSION['zalogowany']))
+	{
+		header('Location: index.php');
+		exit();
+	}
+	
+?>
+
+
+<!doctype html>
+<html lang="en-US">
+	<head>
+	<title>YouAreMoving - Articles</title>
+		<meta charset="UTF-8">
+		<meta name="Description" content="This site is made for you to help create the best version of you!"/>
+		<meta name="Keywords" content="you,are,moving,training,nutrition,exercises,calisthenics,weightlifting,bodybuilding"/>
+		<link rel="stylesheet" href="yam-articles.css">		
+	</head>
+	<body>
+	<h1>Articles</h1>
+	<h2>Introduction to the German Volume Training</h2>
+	<p>GVT, also known as the 10 sets methods, 
+	dates back to mid-70’s and originates from Germany. 
+	Because of this, I decided to name my variant the German Volume Training. <span id="dots">...</span>
+	<span id="more">
+	This method was, to the best of Poliquin's knowledge, 
+	popularized by Rolf Feser, 
+	the German National Weightlifting Coach of that time, 
+	and was quite popular in weightlifting circles as a method to gain weight, 
+	often causing athletes to move up one full weight class in only 12 weeks.
+	</span></p><button onclick="myFunction()" id="btn-up" class="button">Read more</button>
+<?php	
+	echo "<p><b>Artykuł: </b>: ".$_SESSION['article'];
+?>
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("btn-up");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+	} else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+  
+}
+</script>
+	</body>	
+	</html>
